@@ -169,17 +169,17 @@ const CONFIG = {
   URL_SCRIPT: "https://script.google.com/macros/s/AKfycbzW0uJxumxHWsbIjq6l64lUrXJ5J-1_BG9kxkEdWWu_KoqwRK-lIm2MZb_f4pxDrjLx/exec",   // termina en /exec
   POLITICA_URL: "https://drive.google.com/file/d/1ESvK3CHqmkvtpmnwulsZQFkHqj8BGS3q/view?usp=drive_link",                                    // enlace a tu política de datos (si está vacío, no se muestra el enlace)
   CONSENT_QUIEN: "un consultor",                       // "...para que [un consultor] me contacte con información financiera"
-  MENSAJE_FINAL: "Dirígete al stand ubicado en Pabellón Amarillo, número AM14.",
+  MENSAJE_FINAL: "Te contactaremos para brindarte tu premio.",
   /* Casillas de la ruleta, en orden (sentido del reloj desde arriba).
      k = clave que se guarda en la hoja (no cambiar) · txt = texto en la ruleta
      peso = probabilidad relativa (más alto = sale más; 0 = nunca sale) · res = mensaje al ganar */
   RULETA: [
-    { k:"nada",       txt:["Sigue","intentando"],       peso:5, res:"Esta vez no salió premio, ¡pero pasa por el stand igual!" },
-    { k:"asesoria",   txt:["Asesoría","gratuita"],      peso:30, res:"🎁 Ganaste una asesoría gratuita" },
-    { k:"obsequio",   txt:["Ganaste un","obsequio"],    peso:2.5, res:"🎁 ¡Ganaste un obsequio!" },
-    { k:"patrimonial",txt:["Asesoría","patrimonial"],   peso:30, res:"🎁 Ganaste una asesoría patrimonial" },
-    { k:"brecha",     txt:["Revisión brecha","pensional"], peso:30, res:"🎁 Ganaste una revisión de tu brecha pensional" },
-    { k:"obsequio",   txt:["Ganaste un","obsequio"],    peso:2.5, res:"🎁 ¡Ganaste un obsequio!" }
+    { k:"nada",        txt:["Sigue","intentando"],          peso:5,  res:"Esta vez no salió premio, ¡pero igual te contactaremos con información útil para ti!" },
+    { k:"asesoria",    txt:["Asesoría","financiera"],       peso:25, res:"🎁 Ganaste una asesoría financiera" },
+    { k:"tributaria",  txt:["Asesoría","tributaria"],       peso:15, res:"🎁 Ganaste una asesoría tributaria" },
+    { k:"patrimonial", txt:["Asesoría","patrimonial"],      peso:25, res:"🎁 Ganaste una asesoría patrimonial" },
+    { k:"retiro",      txt:["Panorama","de retiro"],        peso:25, res:"🎁 Ganaste un panorama de tu retiro" },
+    { k:"necesidades", txt:["Análisis de","necesidades"],   peso:5,  res:"🎁 Ganaste un análisis de tus necesidades financieras" }
   ]
 };
 /* ======================================================= */
